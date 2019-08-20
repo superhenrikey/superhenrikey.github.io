@@ -1,3 +1,10 @@
 body {
 	font-family: serif;
 }
+h1 {
+	text-align: center;
+}
+img {
+	width: 50%;
+	text-align: center;
+}
