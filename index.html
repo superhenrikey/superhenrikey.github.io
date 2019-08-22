@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nguyễn Trọng Duy</title>
-	<link rel="stylesheet" type="text/css" href="1.css">
+    <title>Super henrikey</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
 </head>
 <body>
-	<h1>Nguyễn Trọng Duy <br>
-		<img src="image/1.jpg">
-	</h1>
-	<hr>
-
-	<br>Ngày Sinh: 1996<br>
-
+<div class="box">
+    <ul class="minbox">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol class="maxbox">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
+<iframe src="ThatGirl.mp3" allow="autoplay loop" id="iframeAudio" style="display:none"></iframe>
+      <div style="display: none;" id="playAudio">
+         <audio controls autoplay loop>
+            <source src="ThatGirl.mp3" type="audio/mpeg">
+         </audio>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+      </script>
+      <script>
+         var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+         if(!isChrome){
+            $('#iframeAudio').remove()
+         }
+         else{
+           $('#playAudio').remove()
+         }
+      </script>
 </body>
 </html>
